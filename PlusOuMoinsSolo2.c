@@ -15,7 +15,7 @@ int main (int argc, char *argv[])
 
         printf(" == Quel niveau de difficulte veux tu ? ==\n1. Facile,    de 1 a 100\n2. Moyen,     de 1 a 1000\n3. Difficile, de 1 a 10000\n");
         scanf("%d", &difficulteEntree);
-        while (difficulteEntree < 1 && difficulteEntree > 3)
+        while (difficulteEntree < 1 || difficulteEntree > 3)
         {
                 printf("Veuillez entrer une difficulte existante\n");
                 scanf("%d", &difficulteEntree);
